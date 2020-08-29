@@ -1,10 +1,23 @@
 $margin-size: 2rem;
 
 .container {
-    margin: 0 $margin-size;
+    // margin: 0 $margin-size;
     display: flex;
     background-color: lavenderblush;
-    .conatiner-inner {
+    height: 100vh;
+    .container-inner {
+        max-width: 1024px;
+        margin: 0 auto;
         background-color: white;
+
+        h1, p {
+            text-align: center;
+        }
+
     }
+}
+
+.picture {
+    flex: 100% 1 1;
+    flex-wrap: wrap;
 }
