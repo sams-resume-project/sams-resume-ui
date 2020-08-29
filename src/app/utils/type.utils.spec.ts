@@ -18,7 +18,7 @@ describe('type utilities [type.utils.ts]', () => {
             bar: 42,
         };
 
-        const result: boolean = isPojoOf(input, 'bar');
+        const result: boolean = isPojoOf<Foo>(input, 'bar');
 
         expect(result).toBeTrue();
     });
