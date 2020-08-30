@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-interface foo {
+interface Foo {
   bar: string;
 }
 
@@ -10,9 +10,9 @@ interface foo {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public firstName: string = 'James';
-  public lastName: string = 'Bond';
-  public foobar: foo = {
+  public firstName = 'James';
+  public lastName = 'Bond';
+  public foobar: Foo = {
     bar: '42',
   };
 }

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @param val object to be evaluated
  * @param props list of properties on the interface
  */
