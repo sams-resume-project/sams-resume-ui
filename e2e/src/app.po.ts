@@ -6,6 +6,9 @@ export class AppPage {
   }
 
   getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+    /**
+     * thanks SO: https://stackoverflow.com/questions/28464604/more-than-one-element-found-for-locator-warning
+     */
+    return element.all(by.css('app-root .container-inner p')).first().getText() as Promise<string>;
   }
 }
