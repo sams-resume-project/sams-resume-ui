@@ -58,3 +58,13 @@ export function isPojoOf<T extends object>(val: any, ...props: (keyof T)[]): val
         return res && prop in val;
     }, true);
 }
+
+/**
+ *
+ * @method isObject
+ * @param val value to test
+ * @returns true if object is an object function
+ */
+export function isObject(val: any): val is object {
+    throw 'not implemented';
+}
